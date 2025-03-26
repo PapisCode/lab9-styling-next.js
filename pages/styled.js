@@ -1,0 +1,29 @@
+import styles from '../styles/StyledPage.module.css';
+import styled from 'styled-components';
+
+const StyledButton = styled.button`
+padding: 10px 20px;
+color: white;
+border: none;
+border-radius: 5px;
+background-color: ${props => props.bgColor || 'blue'};
+cursor: pointer;
+`;
+
+export default function StyledPage() {
+    const headerStyle = {
+        backgroundColor: '#4caf50',
+        fontSize: '2rem',
+        padding: '20px',
+        color: 'white',
+        textAlign: 'center',
+    };
+
+    return (
+        <div className={styles.container}>
+            <h1 style={heaaderStyle}>Welcome to the Styled Page</h1>
+            <button className={styles.moduleButton}>CSS Module Button</button>
+            <StyledButton bgColor="crimson">Styled-Component Button</StyledButton>
+        </div>
+    );
+}
