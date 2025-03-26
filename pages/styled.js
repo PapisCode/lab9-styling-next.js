@@ -19,9 +19,18 @@ export default function StyledPage() {
         textAlign: 'center',
     };
 
+    // Click handlers
+    const handleCSSButtonClick = () => {
+        alert("Here is the CSS Module button feature.");
+    };
+
+    const handlleStyledButtonClick = () => {
+        alert("Here is the Styled-Component button feature.");
+    };
+
     return (
         <div className={styles.container}>
-            <h1 style={heaaderStyle}>Welcome to the Styled Page</h1>
+            <h1 style={headerStyle}>Welcome to the Styled Page</h1>
             <button className={styles.moduleButton}>CSS Module Button</button>
             <StyledButton bgColor="crimson">Styled-Component Button</StyledButton>
         </div>
