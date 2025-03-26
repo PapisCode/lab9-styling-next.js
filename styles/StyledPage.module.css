@@ -1,0 +1,29 @@
+.container {
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    max-width: 600px;
+    text-align: center;
+}
+
+.moduleButton {
+    background-color: steelblue;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .moduleButton {
+        font-size: 14px;
+        padding:8px 12px;
+    }
+}
